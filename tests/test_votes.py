@@ -28,13 +28,11 @@ def test_get_one():
 
     result = votes.get(random.choice(result_json)['id'])
     result_json = result.json()
-    print(result_json)
 
     jsonschema.validate(result_json, votes_json_schema)
     assert result.status_code == 200
     assert type(result_json) is dict
     assert len(result.json()) != 0
-    assert type(result_json['id']) is int
 
 
 def test_post():
