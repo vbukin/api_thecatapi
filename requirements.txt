@@ -1,0 +1,5 @@
+Faker==18.13.0
+jsonschema==4.18.0
+jsonschema-specifications==2023.6.1
+pytest==7.4.0
+requests==2.31.0
